@@ -73,3 +73,12 @@ button {
 }
 
 
+/***** Main content -- Right side *****/
+#mainDiv {
+	border: 2px solid black;
+	float: left;
+	display: inline;
+	background-color: #FEFAC0;
+	margin-left: 3.2%;
+	width: 76%;
+}
