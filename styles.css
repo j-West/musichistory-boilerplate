@@ -74,6 +74,7 @@ button {
 
 
 /***** Main content -- Right side *****/
+
 #mainDiv {
 	border: 2px solid black;
 	float: left;
@@ -82,3 +83,34 @@ button {
 	margin-left: 3.2%;
 	width: 76%;
 }
+
+#mainDiv h2 {
+	margin-left: 1.5em;
+}
+
+.musicInfo {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.musicInfo li {
+	list-style: none;
+	margin-right: 1.5em;
+}
+
+.musicInfo li:not(.disabled) {
+	border-right: 2px solid black;
+	padding-right: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
