@@ -1,0 +1,54 @@
+#wrapper {
+	width: 85%;
+	margin: 0 auto;
+}
+
+#navBar {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #FFB4B0;
+	padding: 1em 0;
+	border: 2px solid black;
+}
+
+#navBar li {
+	list-style: none;
+	margin-right: .25em;
+}
+
+#navBar li:not(.disabled) {
+	border-right: 2px solid black;
+	padding-right: .25em;
+}
+
+#navBar a {
+	text-decoration: none;
+}
+
+#navBar:first-child {
+	padding-left: 1em;
+}
+
+#mainDiv {
+	display: inline;
+	background-color: #FEFAC0;
+	width: 60%;
+}
+
+form {
+	background-color: #4DD7FA;
+	border: 2px solid black;
+	width: 20%;
+}
+
+label {
+	display: block;
+	padding: 1em 1em .5em;
+}
+
+select {
+	margin: 0 1em;
+}
+
+
+
