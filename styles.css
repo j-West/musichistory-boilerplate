@@ -46,6 +46,12 @@ label {
 	padding: 1em 1em .5em;
 }
 
+input[type="range"] {
+	margin: 0 1em;
+	width: 15em;
+
+}
+
 select {
 	margin: 0 1em;
 }
