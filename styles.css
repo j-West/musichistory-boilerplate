@@ -1,7 +1,13 @@
+/***** Page Wrapper *****/
+
 #wrapper {
-	width: 85%;
+	width: 80%;
 	margin: 0 auto;
 }
+
+
+/***** Nav Bar *****/
+
 
 #navBar {
 	display: flex;
@@ -29,13 +35,11 @@
 	padding-left: 1em;
 }
 
-#mainDiv {
-	display: inline;
-	background-color: #FEFAC0;
-	width: 60%;
-}
+
+/***** Main content -- Left side/form *****/
 
 form {
+	float: left;
 	background-color: #4DD7FA;
 	border: 2px solid black;
 	width: 20%;
