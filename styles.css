@@ -61,5 +61,15 @@ select {
 	width: 15em;
 }
 
+.floatL {
+	float: left;
+}
+
+button {
+	display: block;
+	margin: 1em auto;
+	font-size: 1.1em;
+	padding: .1em 2em;
+}
 
 
