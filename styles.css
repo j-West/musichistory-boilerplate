@@ -72,6 +72,10 @@ button {
 	padding: .1em 2em;
 }
 
+.clearB {
+	clear: both;
+}
+
 
 /***** Main content -- Right side *****/
 
