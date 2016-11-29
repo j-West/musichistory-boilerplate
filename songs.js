@@ -19,3 +19,48 @@ for (var i = 0; i < songs.length; i++) {
   console.log(songs[i]);
   songs[i] = songs[i].replace(reFormat, "-");
 }
+
+songs.push("Black Beatles-Rae Sremmurd-StremmLife2-Hip Hop");
+songs.unshift("Broccoli-D.R.A.M.-Big Baby D.R.A.M.-Hip Hop");
+
+for (var i = 1; i < songs.length-2; i++) {
+  songs[i] = songs[i] + "-Rock";
+}
+songs[5] = songs[5] + "-Pop";
+
+console.log(songs);
+
+
+var h2InDiv = firstDiv.querySelector("h2");
+console.log(h2InDiv);
+
+var currentmusic = songs.toString();
+
+console.log(currentmusic, typeof(currentmusic));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Not needed right now, maybe for future verisons
+//
+// function addGenre(indexNum, genre) {
+//   songs[indexNum] = songs[indexNum] + genre;
+// }
+//
+// addGenre(1, "-Rock");
+// addGenre(2, "-Rock");
+// addGenre(3, "-Rock");
+// addGenre(4, "-Rock");
+// addGenre(5, "-Pop");
