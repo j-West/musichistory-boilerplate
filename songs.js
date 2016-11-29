@@ -1,7 +1,8 @@
 var firstDiv = document.getElementById("first-song");
-console.log(firstDiv);
+// console.log(firstDiv);
 
 var songs = [];
+// songs.unshift("Broccoli-D.R.A.M.-Big Baby D.R.A.M.-Hip Hop");
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
 songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
 songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
@@ -16,7 +17,7 @@ for (var i = 0; i < songs.length; i++) {
   for (var j = 0; j < re.length; j++) {
     songs[i] = songs[i].replace(re[j], change[j]);
   }
-  console.log(songs[i]);
+  // console.log(songs[i]);
   songs[i] = songs[i].replace(reFormat, "-");
 }
 
@@ -28,15 +29,30 @@ for (var i = 1; i < songs.length-2; i++) {
 }
 songs[5] = songs[5] + "-Pop";
 
-console.log(songs);
+// console.log(songs);
 
 
 var h2InDiv = firstDiv.querySelector("h2");
-console.log(h2InDiv);
+// console.log(h2InDiv);
 
-var currentmusic = songs.toString();
 
-console.log(currentmusic, typeof(currentmusic));
+var musicLibrary = {
+                    songs : [],
+                    artist : [],
+                    album : [],
+                    genre : []
+                   };
+
+for (var i = 0; i < songs.length; i++) {
+  songs[i] = songs[i].toString();
+  var tempArray = songs[i].split("-");
+
+  musicLibrary.songs.push(tempArray[0]);
+  musicLibrary.artist.push(tempArray[1]);
+  musicLibrary.album.push(tempArray[2]);
+  musicLibrary.genre.push(tempArray[3]);
+}
+
 
 
 
