@@ -72,17 +72,24 @@ var albumLi
 var genreLi
 
 
-
-
-
-
-
-
-
+for (var i = 0; i < musicLibrary.songs.length; i++) {
+  currentSong = songDiv[i];
+  songH2 = currentSong.querySelector("h2");
+  songUl = currentSong.querySelector("ul").children;
+  artistLi = songUl[0];
+  albumLi = songUl[1];
+  genreLi = songUl[2];
 
 
 
 }
+
+
+
+
+
+
+
 
 
 
