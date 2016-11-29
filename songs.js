@@ -1,14 +1,14 @@
-var firstDiv = document.getElementById("song1");
-console.log(firstDiv);
-var songH2 = firstDiv.querySelector("h2");
-console.log(songH2);
-var songUl = document.querySelector("div#song1 ul.musicInfo").children;
-var artistLi = songUl[0];
-console.log(artistLi);
-var albumLi = songUl[1];
-console.log(albumLi);
-var genreLi = songUl[2];
-console.log(genreLi);
+// var firstDiv = document.getElementById("song1");
+// console.log(firstDiv);
+// var songH2 = firstDiv.querySelector("h2");
+// console.log(songH2);
+// var songUl = document.querySelector("div#song1 ul.musicInfo").children;
+// var artistLi = songUl[0];
+// console.log(artistLi);
+// var albumLi = songUl[1];
+// console.log(albumLi);
+// var genreLi = songUl[2];
+// console.log(genreLi);
 
 var songs = [];
 // songs.unshift("Broccoli-D.R.A.M.-Big Baby D.R.A.M.-Hip Hop");
