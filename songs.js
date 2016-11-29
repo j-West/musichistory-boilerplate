@@ -17,4 +17,5 @@ for (var i = 0; i < songs.length; i++) {
     songs[i] = songs[i].replace(re[j], change[j]);
   }
   console.log(songs[i]);
+  songs[i] = songs[i].replace(reFormat, "-");
 }
