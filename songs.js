@@ -68,14 +68,11 @@ for (var i = 0; i < musicLibrary.songs.length; i++) {
   albumLi = songUl[1];
   genreLi = songUl[2];
 
-
-
+  songH2.innerHTML = musicLibrary.songs[i];
+  artistLi.innerHTML = musicLibrary.artist[i];
+  albumLi.innerHTML = musicLibrary.album[i];
+  genreLi.innerHTML = musicLibrary.genre[i];
 }
-
-
-
-
-
 
 
 
