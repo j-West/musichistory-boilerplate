@@ -63,6 +63,13 @@ for (var i = 0; i < songs.length; i++) {
   musicLibrary.genre.push(tempArray[3]);
 }
 
+var songDiv = document.getElementsByClassName("songDiv");
+var currentSong;
+var songH2;
+var songUl
+var artistLi
+var albumLi
+var genreLi
 
 
 
@@ -75,7 +82,7 @@ for (var i = 0; i < songs.length; i++) {
 
 
 
-
+}
 
 
 
