@@ -1,15 +1,3 @@
-// var firstDiv = document.getElementById("song1");
-// console.log(firstDiv);
-// var songH2 = firstDiv.querySelector("h2");
-// console.log(songH2);
-// var songUl = document.querySelector("div#song1 ul.musicInfo").children;
-// var artistLi = songUl[0];
-// console.log(artistLi);
-// var albumLi = songUl[1];
-// console.log(albumLi);
-// var genreLi = songUl[2];
-// console.log(genreLi);
-
 var songs = [];
 // songs.unshift("Broccoli-D.R.A.M.-Big Baby D.R.A.M.-Hip Hop");
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -66,10 +54,10 @@ for (var i = 0; i < songs.length; i++) {
 var songDiv = document.getElementsByClassName("songDiv");
 var currentSong;
 var songH2;
-var songUl
-var artistLi
-var albumLi
-var genreLi
+var songUl;
+var artistLi;
+var albumLi;
+var genreLi;
 
 
 for (var i = 0; i < musicLibrary.songs.length; i++) {
