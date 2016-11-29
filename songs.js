@@ -1,5 +1,14 @@
-var firstDiv = document.getElementById("first-song");
-// console.log(firstDiv);
+var firstDiv = document.getElementById("song1");
+console.log(firstDiv);
+var songH2 = firstDiv.querySelector("h2");
+console.log(songH2);
+var songUl = document.querySelector("div#song1 ul.musicInfo").children;
+var artistLi = songUl[0];
+console.log(artistLi);
+var albumLi = songUl[1];
+console.log(albumLi);
+var genreLi = songUl[2];
+console.log(genreLi);
 
 var songs = [];
 // songs.unshift("Broccoli-D.R.A.M.-Big Baby D.R.A.M.-Hip Hop");
@@ -8,6 +17,7 @@ songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast 
 songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
 songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
 songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+// songs.push("Black Beatles-Rae Sremmurd-StremmLife2-Hip Hop");
 
 var re = [/\*|\@|\!|\(/g, "> "];
 var change = ["", "- "];
@@ -32,8 +42,8 @@ songs[5] = songs[5] + "-Pop";
 // console.log(songs);
 
 
-var h2InDiv = firstDiv.querySelector("h2");
-// console.log(h2InDiv);
+
+
 
 
 var musicLibrary = {
