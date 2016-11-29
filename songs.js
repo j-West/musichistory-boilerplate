@@ -1,5 +1,7 @@
-var songs = [];
+var firstDiv = document.getElementById("first-song");
+console.log(firstDiv);
 
+var songs = [];
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
 songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
 songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
