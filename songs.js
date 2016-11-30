@@ -42,9 +42,8 @@ var musicLibrary = {
                    };
 
 for (var i = 0; i < songs.length; i++) {
-  songs[i] = songs[i].toString();
   var tempArray = songs[i].split("-");
-
+  // console.log(tempArray);
   musicLibrary.songs.push(tempArray[0]);
   musicLibrary.artist.push(tempArray[1]);
   musicLibrary.album.push(tempArray[2]);
