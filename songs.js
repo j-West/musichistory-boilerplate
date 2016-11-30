@@ -65,7 +65,7 @@ for (var i = 0; i < songs.length; i++) {
 }
 
 // Storing the songDiv element in a variable
-var songDiv = document.getElementsByClassName("songDiv");
+var songDiv = document.querySelectorAll(".songDiv");
 // Declaring multiple variables to hold the children os songDiv
 var currentSong;
 var songH2;
