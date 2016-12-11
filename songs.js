@@ -1,3 +1,8 @@
+var navBar = document.querySelector("#navBar")
+var mainDiv = document.querySelector(".mainDiv")
+var formDiv = document.querySelector("#formDiv")
+var addMusicView = document.querySelector(".add-music-view")
+
 var songs = [];
 // songs.unshift("Broccoli-D.R.A.M.-Big Baby D.R.A.M.-Hip Hop");
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
