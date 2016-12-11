@@ -100,19 +100,25 @@ for (var i = 0; i < musicLibrary.songs.length; i++) {
 }
 
 
+navBar.addEventListener("click", (e) => {
+  if (e.target.textContent === "View Music") {
+    addMusicView.classList.toggle("hidden")
+    formDiv.classList.toggle("hidden")
+    mainDiv.classList.toggle("hidden")
+  } else if (e.target.textContent === "Add Music") {
+    formDiv.classList.toggle("hidden")
+    mainDiv.classList.toggle("hidden")
+    addMusicView.classList.toggle("hidden")
 
+  }
+})
 
-
-
-
-// Not needed right now, maybe for future verisons
-//
-// function addGenre(indexNum, genre) {
-//   songs[indexNum] = songs[indexNum] + genre;
-// }
-//
-// addGenre(1, "-Rock");
-// addGenre(2, "-Rock");
-// addGenre(3, "-Rock");
-// addGenre(4, "-Rock");
-// addGenre(5, "-Pop");
+addMusicView.addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
+    musicLibrary.songs.push(document.querySelector("#add-music-song-input").value)
+    musicLibrary.artist.push(document.querySelector("#add-music-artist-input").value)
+    musicLibrary.album.push(document.querySelector("#add-music-album-input").value)
+    musicLibrary.genre.push(document.querySelector("#add-music-genre-input").value)
+    console.log(musicLibrary);
+  }
+})
