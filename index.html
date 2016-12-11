@@ -17,8 +17,10 @@
 			</ul>
 		</header>
 
+<!-- Start View Music View -->
 		<div id="formDiv">
-			<form>
+
+			<form> <!-- Maybe change to Div depending on furute requirements -->
 				<label for="range">Song length:</label>
 				<input type="range" id="range" name="songLengthRange">
 
@@ -59,7 +61,7 @@
 			</form>
 		</div>
 
-		<div id="mainDiv">
+		<div class="mainDiv">
       <div class="songDiv">
   			<h2></h2>
   			<ul class="musicInfo">
@@ -117,7 +119,16 @@
         </ul>
       </div>
 		</div>
-	</div>
+	</div>  <!-- End View Music View -->
+
+<!-- Start Add Music View -->
+  <div class="add-music-view hidden">
+    <label for="add-music-song-input">Song Name:<input type="text" id="add-music-song-input"></label>
+    <label for="add-music-song-input">Artist:<input type="text" id="add-music-artist-input"></label>
+    <label for="add-music-song-input">Album:<input type="text" id="add-music-album-input"></label>
+    <label for="add-music-song-input">Genre:<input type="text" id="add-music-genre-input"></label>
+    <button type="button">Add</button>
+  </div>  <!-- Start Add Music View -->
 
   <script src="songs.js"></script>
 </body>
