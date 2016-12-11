@@ -101,26 +101,38 @@ function showViewMusicView() {
   mainDiv.classList.toggle("hidden")
 }
 
+function clearInputs() {
+  var inputs = addMusicView.querySelectorAll("input")
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].value = ""
+  }
+}
 
 navBar.addEventListener("click", (e) => {
   if (e.target.textContent === "View Music") {
-    addMusicView.classList.toggle("hidden")
-    formDiv.classList.toggle("hidden")
-    mainDiv.classList.toggle("hidden")
+    showViewMusicView()
   } else if (e.target.textContent === "Add Music") {
     formDiv.classList.toggle("hidden")
     mainDiv.classList.toggle("hidden")
     addMusicView.classList.toggle("hidden")
+    addMusicView.querySelector("#add-music-song-input").focus()
 
   }
 })
 
 addMusicView.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
-    musicLibrary.songs.push(document.querySelector("#add-music-song-input").value)
-    musicLibrary.artist.push(document.querySelector("#add-music-artist-input").value)
-    musicLibrary.album.push(document.querySelector("#add-music-album-input").value)
-    musicLibrary.genre.push(document.querySelector("#add-music-genre-input").value)
+    musicLibrary.songs.push(addMusicView.querySelector("#add-music-song-input").value)
+    musicLibrary.artist.push(addMusicView.querySelector("#add-music-artist-input").value)
+    musicLibrary.album.push(addMusicView.querySelector("#add-music-album-input").value)
+    musicLibrary.genre.push(addMusicView.querySelector("#add-music-genre-input").value)
     console.log(musicLibrary);
+    addUpdatedMusic()
+    showViewMusicView()
+    clearInputs()
   }
 })
+
+
+
+addUpdatedMusic()
