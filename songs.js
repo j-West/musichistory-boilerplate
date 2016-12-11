@@ -57,6 +57,7 @@ var musicLibrary = {
                     genre : []
                    };
 
+
 // Loop to loop over the songs array
 for (var i = 0; i < songs.length; i++) {
   // Splitting the current index of songs array by '-' and storing the resulting array in tempArray
@@ -69,34 +70,35 @@ for (var i = 0; i < songs.length; i++) {
   musicLibrary.genre.push(tempArray[3]);
 }
 
-// Storing the songDiv element in a variable
-var songDiv = document.querySelectorAll(".songDiv");
-// Declaring multiple variables to hold the children os songDiv
-var currentSong;
-var songH2;
-var songUl;
-var artistLi;
-var albumLi;
-var genreLi;
 
-// Loop over the musicLibrary object to place each key's value index into variables innerHTML
-for (var i = 0; i < musicLibrary.songs.length; i++) {
-  // Store current index of songDiv in current song
-  currentSong = songDiv[i];
-  // Select and store the h2 element in songDiv in songH2
-  songH2 = currentSong.querySelector("h2");
-  // Select and store the ul's children in songUl
-  songUl = currentSong.querySelector("ul").children;
-  // Assign artistLi, albumLi and genreLi the correct index of songUl
-  artistLi = songUl[0];
-  albumLi = songUl[1];
-  genreLi = songUl[2];
 
-// Changing the innerHTML of the html elements to the values in musicLibrary
-  songH2.innerHTML = musicLibrary.songs[i];
-  artistLi.innerHTML = musicLibrary.artist[i];
-  albumLi.innerHTML = musicLibrary.album[i];
-  genreLi.innerHTML = musicLibrary.genre[i];
+function addUpdatedMusic() {
+    mainDiv.innerHTML = ""
+  // Loop over the musicLibrary object to place each value into the songDiv
+  for (var i = 0; i < musicLibrary.songs.length; i++) {
+
+
+    let songDiv = document.createElement("div")
+    songDiv.classList.add("songDiv")
+
+      songDiv.innerHTML = `
+                              <div class="songDiv">
+                                <h2>${musicLibrary.songs[i]}</h2>
+                                <ul class="musicInfo">
+                                  <li>${musicLibrary.artist[i]}</li>
+                                  <li>${musicLibrary.album[i]}</li>
+                                  <li class="no-borderR">${musicLibrary.genre[i]}</li>
+                                </ul>
+                              </div>
+                           `
+mainDiv.appendChild(songDiv)
+
+  }
+}
+function showViewMusicView() {
+  addMusicView.classList.toggle("hidden")
+  formDiv.classList.toggle("hidden")
+  mainDiv.classList.toggle("hidden")
 }
 
 
