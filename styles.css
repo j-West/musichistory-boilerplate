@@ -123,7 +123,7 @@ button {
 	text-align: center;
 }
 
-input {
+.add-music-view input {
 	border: 2px solid black;
 	float: right;
 	height: 2em;
