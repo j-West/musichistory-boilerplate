@@ -53,23 +53,27 @@ label {
 input[type="range"] {
 	margin: 0 1em;
 	width: 85%;
-
+	border: 2px solid black;
 }
 
 select {
 	margin: 0 1em;
 	width: 85%;
+	border: 2px solid black;
 }
 
 .floatL {
 	float: left;
 }
 
+
 button {
 	display: block;
 	margin: 1em auto;
 	font-size: 1.1em;
 	padding: .1em 2em;
+	border: 2px solid black;
+	border-radius: 7%;
 }
 
 .clearB {
@@ -79,16 +83,17 @@ button {
 
 /***** Main content -- Right side *****/
 
-#mainDiv {
+.mainDiv {
 	border: 2px solid black;
 	float: left;
 	display: inline;
 	background-color: #FEFAC0;
 	margin-left: 3%;
 	width: 76%;
+	/*display: none;*/
 }
 
-#mainDiv h2 {
+.mainDiv h2 {
 	margin-left: 1.5em;
 }
 
@@ -108,9 +113,31 @@ button {
 }
 
 
+/***** Add Music View *****/
+
+.add-music-view {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	margin: 5em auto;
+	text-align: center;
+}
+
+input {
+	border: 2px solid black;
+	float: right;
+	height: 2em;
+	width: 15em;
+}
+
+/***** Display: none *****/
+
+.hidden {
+	display: none;
+}
 
 
-/* Media queries */
+/***** Media queries *****/
 
 @media only screen and (max-width: 1120px) {
 	#mainDiv {
