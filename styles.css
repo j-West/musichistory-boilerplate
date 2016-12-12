@@ -66,8 +66,12 @@ select {
 	float: left;
 }
 
+.floatR {
+	float: right;
+}
 
-button {
+
+ form button {
 	display: block;
 	margin: 1em auto;
 	font-size: 1.1em;
