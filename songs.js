@@ -2,10 +2,12 @@ var navBar = document.querySelector("#navBar")
 var mainDiv = document.querySelector(".mainDiv")
 var formDiv = document.querySelector("#formDiv")
 var addMusicView = document.querySelector(".add-music-view")
-
+var flag = false;
 
 function addUpdatedMusic(library) {
-
+  if (flag) {
+    return;
+  }
   // Loop over the musicLibrary object to place each value into the songDiv
   for (let i = 0; i < library.music.length; i++) {
 
@@ -33,6 +35,7 @@ if (i === library.music.length - 1) {
   mainDiv.appendChild(moreDiv)
   buttonListeners()
 }
+}
 
 function buttonListeners() {
 document.querySelector(".mainDiv").addEventListener("click", (e) => {
@@ -42,6 +45,9 @@ document.querySelector(".mainDiv").addEventListener("click", (e) => {
     mainDiv.removeChild(parent)
 
   } else if (e.target.textContent === "More"){
+    if (flag) {
+      return;
+    }
 
   var musicRequest = new XMLHttpRequest();
   musicRequest.addEventListener("load", (e) => {
@@ -49,7 +55,7 @@ document.querySelector(".mainDiv").addEventListener("click", (e) => {
     console.log(data2);
     addUpdatedMusic(data2)
     mainDiv.removeChild(document.querySelector(".more-div"))
-
+    flag = true;
   })
   musicRequest.open("GET", "musicLibrary2.json")
   musicRequest.send()
@@ -62,7 +68,7 @@ document.querySelector(".mainDiv").addEventListener("click", (e) => {
 
 
 
-  }
+
 }
 
 
