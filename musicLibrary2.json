@@ -1,0 +1,16 @@
+{
+  "music" : [
+    {
+      "Song": "Black Beatles",
+      "Artist": "Rae Sremmurd",
+      "Album": "StremmLife2",
+      "Genre": "Hip Hop"
+    },
+    {
+      "Song": "Broccoli",
+      "Artist": "D.R.A.M",
+      "Album": "Big Baby D.R.A.M",
+      "Genre": "Hip Hop"
+    }
+  ]
+}
